@@ -7,6 +7,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../Shared/Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Login = () => {
@@ -89,6 +90,9 @@ const Login = () => {
 
                 <p className='mt-3 text-start'>New to Electro Store? <span onClick={navigateRegister} style={{ cursor: 'pointer' }} className='text-danger'>Please Register</span></p>
             </Form>
+
+
+            <SocialLogin></SocialLogin>
 
 
 
