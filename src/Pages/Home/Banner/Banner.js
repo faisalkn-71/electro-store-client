@@ -18,7 +18,7 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <div className='bg-black bg-opacity-50'>
+                    <div className='bg-black bg-opacity-75'>
                         <h3>Committed with Buyer</h3>
                         <p>In the Electronic items section it's hard to find a trustable company. That's why we am here. We are committed with our buyers.</p>
                     </div>
@@ -34,9 +34,9 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <div className='bg-black bg-opacity-50'>
+                    <div className='bg-black bg-opacity-75'>
                         <h3>Provide the best Products</h3>
-                        <p>We provide the best electronic goods in the world for you shop and your bussiness.</p>
+                        <p>We provide the best electronic goods in the world for your shop and your bussiness.</p>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
