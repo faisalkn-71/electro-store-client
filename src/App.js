@@ -9,6 +9,8 @@ import Blogs from './Pages/Blogs/Blogs';
 import NotFound from './Pages/Shared/NotFound/NotFound'
 import ProductDetail from './Pages/ProductDetail/ProductDetail';
 import AllProducts from './Pages/AllProducts/AllProducts';
+import { ToastContainer } from 'react-toastify';
+
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
       </Routes>
 
       <Footer></Footer>
+
+      <ToastContainer></ToastContainer>
+
     </div>
   );
 }

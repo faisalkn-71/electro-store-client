@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword} from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { updateProfile } from 'firebase/auth';
+import Loading from '../../Shared/Loading/Loading';
 
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
+    const navigate = useNavigate();
 
     const [
         createUserWithEmailAndPassword,
@@ -16,10 +17,17 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
-    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
+    let errorElement;
+    if(error){
+        errorElement = <p className='text-danger'>Error: {error.message}</p>
+    }
+
+    if(loading){
+        return <Loading></Loading>
+    }
 
 
-    const navigate = useNavigate();
 
     const navigateLogin = () => {
         navigate('/login')
@@ -30,7 +38,7 @@ const Register = () => {
     }
 
 
-    const handleRegister = async (event) => {
+    const handleRegister = (event) => {
         event.preventDefault();
 
         const name = event.target.name.value;
@@ -38,10 +46,8 @@ const Register = () => {
         const password = event.target.password.value;
 
 
-        await createUserWithEmailAndPassword(email, password)
-        await updateProfile({ displayName:name});
-        console.log(updateProfile)
-        navigate('/home')
+        createUserWithEmailAndPassword(email, password)
+        
 
 
 
@@ -73,8 +79,11 @@ const Register = () => {
                         id='terms'
                         label="Accept Electro Store Terms and Conditions" />
                 </Form.Group>
+
+                    {errorElement}
+
                 <Button
-                    className='d-flex jutify-content-start'
+                    className='d-flex justify-content-start'
                     disabled={!agree}
                     variant="primary"
                     type="submit">
