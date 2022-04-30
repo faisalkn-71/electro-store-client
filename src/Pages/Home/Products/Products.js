@@ -10,8 +10,8 @@ const Products = () => {
         .then(data => setProducts(data))
     },[])
     return (
-        <div className='container-fluid my-5'>
-            <h2  className='mb-3 text-bold text-primary'>PRODUCTS</h2>
+        <div id='products' className='container-fluid my-5'>
+            <h1  className='mb-3 text-bold text-primary'>PRODUCTS</h1>
             <div className='products-container'>
             {
                 products.map(product => <Product
