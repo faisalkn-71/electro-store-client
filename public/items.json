@@ -31,7 +31,7 @@
       "price": "$3,085.79",
       "picture": "https://i.ibb.co/Y7RFGhY/oven.jpg",
       "quantity": 31,
-      "description": "Single door pull opens both doors with 1 hand ease and convenience. Digital controls provide precise cooking time and temperature to take the guesswork out of cooking. Turbo convection baking technology cooks faster and browns more evenly. Two racks provide maximum cooking flexibility",
+      "description": "Single door pull opens both doors with 1 hand ease and convenience. Digital controls provide precise cooking time and temperature to take the guesswork out of cooking. Turbo convection baking technology cooks faster and browns more evenly.",
       "name": "Awesome Oven",
       "supplier_name": "LiveSale Supply"
     },
@@ -40,7 +40,7 @@
       "price": "$3,626.53",
       "picture": "https://i.ibb.co/RTT9LvD/printer.jpg",
       "quantity": 28,
-      "description": "HP+ SMART PRINTING SYSTEM – HP+ makes your printer Smarter with advanced features that make it easy to print from any device or app. Requires an HP account, internet connection and use of only Original HP Ink for the life of the printer. BEST FOR BASIC PRINTING – Print basic color documents like recipes.",
+      "description": "HP+ SMART PRINTING SYSTEM – HP+ makes your printer Smarter with advanced features that make it easy to print from any device or app. Requires an HP account, internet connection and use of only Original HP Ink for the life of the printer. BEST FOR BASIC PRINTING ",
       "name": "Digital Printer",
       "supplier_name": "Big Market Supply"
     },
@@ -49,8 +49,27 @@
       "price": "$1,310.59",
       "picture": "https://i.ibb.co/thQ4Nsr/ac.jpg",
       "quantity": 39,
-      "description": "LOW NOISE PERFORMANCE - operates at sound levels as low as 53dB (in low mode) eliminating unnecessary noise. ENERGY STAR CERTIFIED - This air conditioner has met the high standards of the ENERGY STAR Program using energy-efficient technologies that translate into electricity savings.",      
+      "description": "LOW NOISE PERFORMANCE - operates at sound levels as low as 53dB (in low mode) eliminating unnecessary noise. ENERGY STAR CERTIFIED - This air conditioner has met the high standards of the ENERGY STAR Program using energy-efficient technologies that translate... ",      
       "name": "Air Conditioner",
       "supplier_name": "The General Wholesale"
+    },
+    {
+      "_id": "626d68300c56a7cf7e2c66b0",
+      "price": "$1,866.85",
+      "picture": "https://i.ibb.co/GQRd6tw/washing-machine.jpg",
+      "quantity": 25,
+      "description": "Healthy, homemade juice in seconds- juice a variety of fruits and vegetables. Juicer is easy to assemble with extra-large pulp bin. Juice cup not included. Extra-large 3 inch feed chute fits whole fruits and vegetables - Fit a whole apple, a peeled orange or a handful of kale. ",
+      "name": "Washing Machine",
+      "supplier_name": "Classic Distributing"
+    },
+    {
+      "_id": "626d683077075980a02cf1f1",
+      "price": "$3,249.81",
+      "picture": "https://i.ibb.co/hy79Kxm/juicer.jpg",
+      "quantity": 23,
+      "description": "Mini Washing Machine - The portable clothes washer has a high-powered 250-watt motor and Wash-Load Capacity-10 pounds. Gravity drain!. The 2-in-1 function can be used as a washing machine and dryer. With compact size, it is great for dorms, apartments, etc.N.W.：15lb", 
+      "name": "Fresh Juicer",
+      "supplier_name": "LiveSale Supply"
     }
+
   ]
