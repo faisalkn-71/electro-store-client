@@ -1,0 +1,56 @@
+[
+    {
+      "_id": "626cfa03ec40d1a73770ec19",
+      "price": "$3,919.37",
+      "picture": "https://i.ibb.co/HPntnsq/tv.jpg",
+      "quantity": 32,
+      "description": "Dimensions with Stand (W x H x D): 28.8' x 18.9' x 7.1' ; Without Stand (W x H x D): 28.8' x 17.2' x 2.9' ; Weight with Stand: 8.2 lbs ; Weight without Stand: 8.0 lbs. Smart functionality delivers all your favorite content with over 500,000 movies and TV episodes, accessible through the simple and intuitive Roku TV. HD, Resolution: High definition (720p) resolution for excellent detail, color and contrast. Wireless Connection : 802.11ac 1x1 Dual Band. Dual band Wi-Fi: Get fast and easy access to your favorite content to the dual band Wi-Fi connection. Easy Voice Control: Works with Amazon Alexa or Google Assistant to help you find movie titles, launch or change channels, even switch inputs, using just your voice. Also available through the Roku mobile app.",
+      "name": "Smart TV",
+      "supplier_name": "Bluewaves Supply"
+    },
+    {
+      "_id": "626cfa031f92c082749ba944",
+      "price": "$2,711.49",
+      "picture": "https://i.ibb.co/N3vSTXK/laptop.jpg",
+      "quantity": 24,
+      "description": "POWERFUL, FAST, AMAZING: Our new laptop is packed with the premium performance you’ve come to expect from Samsung — plus some; It’s powered by the latest 12th Gen Evo-certified Intel processor, our most powerful available CPU yet. THIN, LIGHT, POWERFUL: With a PC this powerful, you’ll want to take it with you wherever you go; And you can! At less than 2 pounds, Galaxy Book2 Pro is our thinnest and lightest laptop yet. BRILLIANT, BRIGHT, BEAUTIFUL: Whether you're scrolling through your social feed or video chatting with your bestie, everything looks amazing on a stunning AMOLED screen that’s up to 33% brighter;* Available in two sizes (13.3' and 15.6'). LONG LASTING CHARGE, POWERS UP FAST: Galaxy Book2 Pro features our longest-lasting battery to keep you going for hours and hours on a single charge; When you finally do need a jolt of power, get energized faster with a universal fast charger that gets you 40% of battery power back in just 30 minutes. INNOVATION THAT MOVES YOU FORWARD: Get the combined capabilities of a laptop and a tablet with a versatile 2 in 1 design that features a 360° hinge; Bring ideas to life on the screen with an included S Pen that feels like a real pen.",
+      "name": "Laptop",
+      "supplier_name": "Fresh Point Supply"
+    },
+    {
+      "_id": "626cfa03f7fbecdc382948d4",
+      "price": "$3,776.52",
+      "picture": "https://i.ibb.co/XsKjH4f/freez.jpg",
+      "quantity": 22,
+      "description": "SLIM FREEZER AND REFRIGERATOR COMBO: 25 cubic ft. side-by-side fridge and freezer provides ample fresh and frozen food storage in a slim design and features a dual pad ice and water dispenser. CONVENIENT STORAGE: Features 15.46 cubic ft. of interior refrigerated space for fresh foods and 9.11 cubic ft. of freezer storage for frozen foods, and has gallon-size door bins for taller, wider items. EASY ACCESS SHELVING: Adjustable, easy-to-clean shelving gives you more shelf space for easier organizing, and can accommodate tall wine bottles and wide juice jugs for customizable food storage. KEEPS PRODUCE FRESH: Clear bottom plastic crisper drawer is humidity controlled for fresher and crispier fruits and vegetables, and slides out easily for removal of produce",
+      "name": "Refrigerator",
+      "supplier_name": "Classic Distributing"
+    },
+    {
+      "_id": "626cfa030b2db2b1e6a7bb0d",
+      "price": "$3,085.79",
+      "picture": "https://i.ibb.co/Y7RFGhY/oven.jpg",
+      "quantity": 31,
+      "description": "Single door pull opens both doors with 1 hand ease and convenience. Digital controls provide precise cooking time and temperature to take the guesswork out of cooking. Turbo convection baking technology cooks faster and browns more evenly. Two racks provide maximum cooking flexibility; This oven control allows you to slowly cook your food at a preset temperature of 150°F for an adjustable time of upto 6 hours. Extra large interior accommodates 2 16 inches pizzas; Preheat setting gets oven temperature up to where you need for precise cooking. 90 minute timer with signal turns oven off automatically",
+      "name": "Awesome Oven",
+      "supplier_name": "LiveSale Supply"
+    },
+    {
+      "_id": "626cfa036247edd0c8186a55",
+      "price": "$3,626.53",
+      "picture": "https://i.ibb.co/RTT9LvD/printer.jpg",
+      "quantity": 28,
+      "description": "HP+ SMART PRINTING SYSTEM – HP+ makes your printer Smarter with advanced features that make it easy to print from any device or app. Requires an HP account, internet connection and use of only Original HP Ink for the life of the printer. BEST FOR BASIC PRINTING – Print basic color documents like recipes, forms and travel documents. KEY FEATURES – Print, copy and scan in color, plus mobile and wireless printing. EASY SETUP – Get started fast on any device with the HP Smart app that guides you step by step. HP SMART APP – Print, scan and copy from your phone—whenever, wherever. Get advanced features for 24 months with HP+. WORRY-FREE WIRELESS – Get better range and more reliable connections using dual-band Wi-Fi with self-reset",
+      "name": "Digital Printer",
+      "supplier_name": "Big Market Supply"
+    },
+    {
+      "_id": "626cfa03cbbcacb35a7339bf",
+      "price": "$1,310.59",
+      "picture": "https://i.ibb.co/thQ4Nsr/ac.jpg",
+      "quantity": 39,
+      "description": "LOW NOISE PERFORMANCE - operates at sound levels as low as 53dB (in low mode) eliminating unnecessary noise. ENERGY STAR CERTIFIED - This air conditioner has met the high standards of the ENERGY STAR Program using energy-efficient technologies that translate into electricity savings. MULTIPLE FAN SPEEDS - 3 cooling and fan speeds with Auto Cool allow you to customize your cooling. Air Filter: Washable. MAXIMUM USABILITY - Easy to use electronic controls with remote. COOLS ROOMS UP TO 550 SQ. FT.- LW1216ER is ideal for cooling medium rooms (22' X 25')",      
+      "name": "Air Conditioner",
+      "supplier_name": "The General Wholesale"
+    }
+  ]
