@@ -1,12 +1,31 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import useProducts from '../../../../src/hook/useProducts'
 import './product.css'
 
 const Product = (props) => {
+    const [products, setProducts] = useProducts([]);
     const { _id, name, quantity, price, description, picture, supplier_name } = props.product;
     const navigate = useNavigate()
     const navigateToProductDetail = id => {
         navigate(`product/${id}`);
+    }
+
+    const handleDelete = id => {
+        const proceed = window.confirm("Are you sure?");
+        if(proceed){
+            const url = `http://localhost:5000/product/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                const remaining = products.filter(product => product._id !== id);
+                setProducts(remaining);
+            })
+
+        }
     }
 
     return (
@@ -22,7 +41,7 @@ const Product = (props) => {
             <br />
             <div className='d-flex justify-content-between'>
                 <button onClick={() => navigateToProductDetail(_id)} className='btn btn-primary'>Update</button>
-                <button className='btn btn-danger'>Delete</button>
+                <button onClick={() => handleDelete(_id)} className='btn btn-danger'>Delete</button>
             </div>
         </div>
     );
