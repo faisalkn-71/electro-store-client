@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useProducts from '../../hook/useProducts';
 import Product from '../Home/Product/Product';
 
@@ -15,6 +16,11 @@ const AllProducts = () => {
                     ></Product>)
                 }
             </div>
+                <br/>
+                <br/>
+                <div>
+                    <Link to='/addProduct' className='btn btn-dark'>Add Product</Link>
+                </div>
         </div>
     );
 };

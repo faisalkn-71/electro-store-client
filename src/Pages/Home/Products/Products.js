@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import useProducts from '../../../hook/useProducts';
+import HomeProduct from '../HomeProduct/HomeProduct';
 import Product from '../Product/Product';
 import './products.css'
 
@@ -11,13 +12,13 @@ const Products = () => {
             <h1  className='mb-3 text-bold text-primary'>PRODUCTS</h1>
             <div className='products-container'>
             {
-                products.slice(0, 6).map(product => <Product
-                key = {product._id}
-                product = {product}
-                ></Product>)
+                products.slice(0, 6).map(product => <HomeProduct
+                    key = {product._id}
+                    product = {product}
+                ></HomeProduct>)
             }
             </div>
-            <Link className='mt-5 px-5 btn btn-dark rounded-pill' to='/products'>Show All Products</Link>
+            
         </div>
     );
 };

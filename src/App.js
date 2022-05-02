@@ -11,6 +11,7 @@ import ProductDetail from './Pages/ProductDetail/ProductDetail';
 import AllProducts from './Pages/AllProducts/AllProducts';
 import { ToastContainer } from 'react-toastify';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import AddProduct from './Pages/AddProduct/AddProduct';
 
 
 function App() {
@@ -22,8 +23,21 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/products' element={<AllProducts></AllProducts>}></Route>
-        <Route path='/product/:productId' element={<ProductDetail></ProductDetail>}></Route>
-        <Route path='/products/product/:productId' element={<ProductDetail></ProductDetail>}></Route>
+        <Route path='/product/:productId' element={
+          <RequireAuth>
+            <ProductDetail></ProductDetail>
+          </RequireAuth>
+        }></Route>
+        <Route path='/products/product/:productId' element={
+          <RequireAuth>
+            <ProductDetail></ProductDetail>
+          </RequireAuth>
+        }></Route>
+        <Route path='/addproduct' element={
+          <RequireAuth>
+            <AddProduct></AddProduct>
+          </RequireAuth>
+        }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/blogs' element={

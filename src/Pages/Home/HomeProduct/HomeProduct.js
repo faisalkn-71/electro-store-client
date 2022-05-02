@@ -1,8 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './product.css'
 
-const Product = (props) => {
+const HomeProduct = (props) => {
     const { _id, name, quantity, price, description, picture, supplier_name } = props.product;
     const navigate = useNavigate()
     const navigateToProductDetail = id => {
@@ -20,12 +19,12 @@ const Product = (props) => {
                 <p><small>{description}</small></p>
             </div>
             <br />
-            <div className='d-flex justify-content-between'>
+            <div>
                 <button onClick={() => navigateToProductDetail(_id)} className='btn btn-primary'>Update</button>
-                <button className='btn btn-danger'>Delete</button>
+                
             </div>
         </div>
     );
 };
 
-export default Product;
+export default HomeProduct;
