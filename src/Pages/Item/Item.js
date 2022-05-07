@@ -25,7 +25,7 @@ const Item = (props) => {
 
     
     return (
-        <div>
+        <div className='p-3 border border-gary'>
             <h3>{name}</h3>
             <p><small>ID: {productId}</small></p>
             <button onClick={() => handleDelete(_id)} className='btn btn-danger'>Delete</button>

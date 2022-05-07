@@ -16,7 +16,7 @@ const Header = () => {
         <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
             <Container>
                 <Navbar.Brand as={Link} to="/">
-                    <h3 className='text-bold'>Electro Store</h3>
+                    <h3 className='text-bold '><span className='bg-white text-primary p-1'>Electro</span><span className='bg-dark p-1'>Store</span></h3>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
