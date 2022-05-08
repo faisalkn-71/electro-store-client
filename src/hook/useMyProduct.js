@@ -17,7 +17,7 @@ const useMyProduct = () => {
 
         const getMyProduct = async () => {
             const email = user.email;
-            const url = `http://localhost:5000/order?email=${email}`;
+            const url = `https://pure-bayou-63528.herokuapp.com/order?email=${email}`;
             try {
                 const { data } = await axiosPrivate.get(url);
                 setMyProduct(data);

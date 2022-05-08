@@ -8,7 +8,7 @@ const ProductDetail = () => {
 
     const [quantity, setQuantity] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`
+        const url = `https://pure-bayou-63528.herokuapp.com/product/${productId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setQuantity(data))
@@ -26,7 +26,7 @@ const ProductDetail = () => {
         const updateQuantity = {quantity};
 
 
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://pure-bayou-63528.herokuapp.com/product/${productId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -59,7 +59,7 @@ const ProductDetail = () => {
 
         const updateQuantity = {newQuantity};
 
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://pure-bayou-63528.herokuapp.com/product/${productId}`;
         fetch(url, {
             method: 'PUT',
             headers: {

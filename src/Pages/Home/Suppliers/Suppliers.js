@@ -5,7 +5,7 @@ import './Suppliers.css'
 const Suppliers = () => {
     const [suppliers, setSuppliers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/suppliers')
+        fetch('https://pure-bayou-63528.herokuapp.com/suppliers')
         .then(res => res.json())
         .then(data => setSuppliers(data))
     }, [])

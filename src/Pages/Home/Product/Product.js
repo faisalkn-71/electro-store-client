@@ -14,7 +14,7 @@ const Product = (props) => {
     const handleDelete = id => {
         const proceed = window.confirm("Are you sure?");
         if(proceed){
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://pure-bayou-63528.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

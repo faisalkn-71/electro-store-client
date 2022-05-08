@@ -1,6 +1,26 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the website of [Electro Store](https://electro-store-7c6a3.web.app/).
+
+## Project Details
+
+This project is all about a electronic wearhouse website. In the home page of this website there is a lot of sections where you can see products, reviews etc. In the product details sections you can see couple a buttons which are increase and decrease. In the manage product section you can watch all the products. You can also add product in this website by going AddProduct route. There is a blog section in this website. 
+So, why are you waiting for? Check this out now.
+
+
+## Project features and functionality
+
+* React
+* React-dom
+* Firebase
+* React-firebase-hooks
+* react-bootstrap
+* react-toastify
+* React-hook-form
+* json web token
+* axios
+* heroku -for deploying of server site.
+
 
 ## Available Scripts
 
