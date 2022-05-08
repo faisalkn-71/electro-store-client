@@ -22,7 +22,7 @@ const SocialLogin = () => {
     }
 
     if(googleUser) {
-        navigate('/home');    
+        navigate(from, { replace: true });   
     }
     return (
         <div>
