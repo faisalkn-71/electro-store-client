@@ -5,7 +5,7 @@ import './Suppliers.css'
 const Suppliers = () => {
     const [suppliers, setSuppliers] = useState([]);
     useEffect(() => {
-        fetch('supplier.json')
+        fetch('http://localhost:5000/suppliers')
         .then(res => res.json())
         .then(data => setSuppliers(data))
     }, [])
