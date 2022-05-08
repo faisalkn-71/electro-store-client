@@ -1,10 +1,80 @@
 import { Link, useParams } from 'react-router-dom';
 import useProductDetail from '../../hook/useProductDetail';
+import React, { useState, useEffect } from 'react';
 
 const ProductDetail = () => {
     const { productId } = useParams();
     const [product, setProduct] = useProductDetail(productId);
 
+    const [quantity, setQuantity] = useState({});
+    useEffect(() => {
+        const url = `http://localhost:5000/product/${productId}`
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setQuantity(data))
+    }, [])
+  
+
+    // Inceasing quantity by clicking on Increase button
+
+    const handleIncrease = event => {
+        event.preventDefault();
+
+        const quantity = event.target.quantity.value;
+        console.log(quantity)
+
+        const updateQuantity = {quantity};
+
+
+        const url = `http://localhost:5000/product/${productId}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(updateQuantity)
+        })
+        .then(res => res.json())
+        .then(data =>{
+            setQuantity(data)
+            console.log('success', data);
+            alert('Quantity updated successfully on server and now reload the page for showing in the UI.!!!');
+            event.target.reset();
+            
+        })
+
+        
+    }
+
+
+
+    // Decreasing quantity by clicking on Delivered button
+
+    const handleDelivered = () => {
+        const quantityText = product.quantity;
+        const quantity = parseInt(quantityText)
+
+        const newQuantity = quantity - 1;
+        console.log(newQuantity)
+
+        const updateQuantity = {newQuantity};
+
+        const url = `http://localhost:5000/product/${productId}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(updateQuantity)
+        })
+        .then(res => res.json())
+        .then(data =>{
+            setQuantity(data)
+            console.log('success', data);
+            alert('Quantity updated successfully on server and now reload the page for showing in the UI.!!!');
+        })
+
+    }
 
 
     return (
@@ -17,13 +87,21 @@ const ProductDetail = () => {
                 <p>Quantity: {product.quantity}</p>
                 <p>Supplier Name: {product.supplier_name}</p>
                 <p><small>{product.description}</small></p>
-                <button className='btn btn-danger' title='Reduce the quantity by one'>Delivered</button>
+
+                <button onClick={handleDelivered} className='btn btn-danger' title='Reduce the quantity by one'>Delivered</button>
+
                 <br />
                 <br />
-                <div className='d-flex justify-content-start'>
+
+                <form onSubmit={handleIncrease}>
                     <input type="number" name="quantity" placeholder='Enter a number for increasing quantity' id="" />
-                    <button className='btn btn-primary' title='Increase the quantity'>Increase</button>
-                </div>
+
+                    <br />
+
+                    <input className='btn btn-primary' type="submit" value="Increase" />
+                </form>
+
+                
 
                 <div>
                     <Link className='mt-5 px-5 btn btn-success rounded-pill' to={`/checkout/${productId}`}>Proceed Order</Link>
